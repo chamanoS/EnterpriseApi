@@ -31,3 +31,7 @@ C:\Users\Dell Inspiron\Downloads\HelloEnterpriseApi\obj\Debug\net10.0\refint\Hel
 C:\Users\Dell Inspiron\Downloads\HelloEnterpriseApi\obj\Debug\net10.0\HelloEnterpriseApi.pdb
 C:\Users\Dell Inspiron\Downloads\HelloEnterpriseApi\obj\Debug\net10.0\HelloEnterpriseApi.genruntimeconfig.cache
 C:\Users\Dell Inspiron\Downloads\HelloEnterpriseApi\obj\Debug\net10.0\ref\HelloEnterpriseApi.dll
+C:\Users\Dell Inspiron\Downloads\HelloEnterpriseApi\obj\Debug\net10.0\HelloEnterpriseApi.sourcelink.json
+C:\Users\Dell Inspiron\Downloads\HelloEnterpriseApi\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Dell Inspiron\Downloads\HelloEnterpriseApi\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Dell Inspiron\Downloads\HelloEnterpriseApi\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
