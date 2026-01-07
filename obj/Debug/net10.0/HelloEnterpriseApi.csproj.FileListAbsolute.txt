@@ -35,3 +35,6 @@ C:\Users\Dell Inspiron\Downloads\HelloEnterpriseApi\obj\Debug\net10.0\HelloEnter
 C:\Users\Dell Inspiron\Downloads\HelloEnterpriseApi\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Dell Inspiron\Downloads\HelloEnterpriseApi\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Dell Inspiron\Downloads\HelloEnterpriseApi\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Dell Inspiron\Downloads\HelloEnterpriseApi\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Dell Inspiron\Downloads\HelloEnterpriseApi\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Dell Inspiron\Downloads\HelloEnterpriseApi\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.InMemory.dll
