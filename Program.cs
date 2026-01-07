@@ -1,4 +1,6 @@
+
 using HelloEnterpriseApi.Data;
+using HelloEnterpriseApi.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +11,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseInMemoryDatabase("HelloEnterpriseDb"));
+builder.Services.AddScoped<IPatientService, PatientService>();
+
 
 
 var app = builder.Build();
