@@ -16,16 +16,18 @@ public class PatientsController : ControllerBase
     }
 
     [HttpGet]
-    public IActionResult GetPatients()
+    public async Task<IActionResult> GetPatients()
     {
-        var patients = _patientService.GetAll();
+        var patients = await _patientService.GetAllAsync();
         return Ok(patients);
     }
 
+
     [HttpPost]
-    public IActionResult AddPatient(Patient patient)
+    public async Task<IActionResult> AddPatient(Patient patient)
     {
-        var created = _patientService.Add(patient);
+        var created = await _patientService.AddAsync(patient);
         return CreatedAtAction(nameof(GetPatients), new { id = created.Id }, created);
     }
+
 }
