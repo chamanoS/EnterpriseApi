@@ -1,5 +1,6 @@
 using HelloEnterpriseApi.Data;
 using HelloEnterpriseApi.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace HelloEnterpriseApi.Services;
 
@@ -12,15 +13,16 @@ public class PatientService : IPatientService
         _context = context;
     }
 
-    public List<Patient> GetAll()
+    public async Task<List<Patient>> GetAllAsync()
     {
-        return _context.Patients.ToList();
+        return await _context.Patients.ToListAsync();
     }
 
-    public Patient Add(Patient patient)
+    public async Task<Patient> AddAsync(Patient patient)
     {
         _context.Patients.Add(patient);
-        _context.SaveChanges();
+        await _context.SaveChangesAsync();
         return patient;
     }
+
 }
