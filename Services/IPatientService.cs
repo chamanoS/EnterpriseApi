@@ -4,6 +4,6 @@ namespace HelloEnterpriseApi.Services;
 
 public interface IPatientService
 {
-    List<Patient> GetAll();
-    Patient Add(Patient patient);
+    Task<List<Patient>> GetAllAsync();
+    Task<Patient> AddAsync(Patient patient);
 }

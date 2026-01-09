@@ -5,18 +5,14 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 🔹 Add controllers (MVC)
-builder.Services.AddControllers();
+// 🔹 Dependency Injection
 
-// 🔹 Swagger
-builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddControllers(); // 🔹 Add controllers (MVC)
+builder.Services.AddEndpointsApiExplorer();  // 🔹 Swagger
 builder.Services.AddSwaggerGen();
-
-// 🔹 In-memory database
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
+builder.Services.AddDbContext<ApplicationDbContext>(options =>  // 🔹 In-memory database
     options.UseInMemoryDatabase("HelloEnterpriseDb"));
 
-// 🔹 Dependency Injection
 builder.Services.AddScoped<IPatientService, PatientService>();
 
 var app = builder.Build();
