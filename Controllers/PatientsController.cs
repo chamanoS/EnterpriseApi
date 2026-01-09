@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using HelloEnterpriseApi.Models;
 using HelloEnterpriseApi.Services;
+using HelloEnterpriseApi.Dtos;
 
 namespace HelloEnterpriseApi.Controllers;
 
@@ -23,9 +24,15 @@ public class PatientsController : ControllerBase
     }
 
 
-    [HttpPost]
-    public async Task<IActionResult> AddPatient(Patient patient)
+   [HttpPost]
+    public async Task<IActionResult> AddPatient(CreatePatientDto dto)
     {
+        var patient = new Patient
+        {
+            FullName = dto.FullName,
+            Age = dto.Age
+        };
+
         var created = await _patientService.AddAsync(patient);
         return CreatedAtAction(nameof(GetPatients), new { id = created.Id }, created);
     }
